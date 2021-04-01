@@ -16,12 +16,12 @@ public:
     PriorityQueue(): head(nullptr), tail(nullptr){}
     ~PriorityQueue();
     bool empty() const{return head== nullptr;}
-    int size() const{return length;} // liczba elementow w kolejce
+    int size() const{return length;}
     void push(const T& item, int priority_input);
     void push(T&& item,int priority_input);
-    T& top(); // zwraca element najwiekszy, nie usuwa
+    T& top(); 
     void pop();
-    void clear();  // czyszczenie listy z elementow
+    void clear();  
     void display();
 };
 
